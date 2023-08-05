@@ -1,0 +1,14 @@
+辅助工具：Clipper
+地址：
+https://github.com/majido/clipper
+
+使用：
+
+首先启动 service
+adb shell am startservice ca.zgrs.clipper/.ClipboardService
+
+设置剪贴板内容：
+am broadcast -a clipper.set -e text "this can be pasted now"
+
+获取剪贴板内容：
+am broadcast -a clipper.get
